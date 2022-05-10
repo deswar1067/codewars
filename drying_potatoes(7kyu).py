@@ -24,6 +24,7 @@ potatoesshould return the final weight coming out of the oven w1 truncated as an
 Example:
 potatoes(99, 100, 98) --> 50
 """
+import codewars_test as test
 
 
 def potatoes(p0, w0, p1):
