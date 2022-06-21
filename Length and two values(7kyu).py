@@ -39,3 +39,11 @@ def test_group():
         test.assert_equals(alternate(5, True, False), [True, False, True, False, True])
         test.assert_equals(alternate(20, "blue", "red"), ['blue', 'red', 'blue', 'red', 'blue', 'red', 'blue', 'red', 'blue', 'red', 'blue', 'red', 'blue', 'red', 'blue', 'red', 'blue', 'red', 'blue', 'red'])
         test.assert_equals(alternate(0, "lemons", "apples"), [])
+
+
+"""
+Best solution
+
+def alternate(n, first_value, second_value):
+    return [[first_value, second_value][i % 2] for i in range(n)]
+"""
